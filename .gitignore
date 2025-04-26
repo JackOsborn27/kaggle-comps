@@ -12,6 +12,7 @@
 
 .venv/
 .python-version
+test.py
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
