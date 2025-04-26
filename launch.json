@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+      {
+        // Configuration name: Appears in the Debug dropdown menu.
+        "name": "Python: Current File",
+        // Type of debugger to use.
+        "type": "python",
+        // How to launch the process. 'launch' starts a new process.
+        "request": "launch",
+        // Specifies the program to debug. ${file} refers to the currently open file in the editor.
+        "program": "${file}",
+        // Where to display the output. 'integratedTerminal' uses VS Code's built-in terminal.
+        "console": "integratedTerminal",
+        // Automatically stops at the beginning of the program. Set to false if you only want to stop at breakpoints.
+        "stopOnEntry": false,
+        // Debug only user-written code by default (don't step into library code unless configured otherwise).
+        "justMyCode": true
+      },
+      {
+        // Configuration name for Streamlit debugging.
+        "name": "Python: Streamlit",
+        // Type of debugger.
+        "type": "python",
+        // Launch request.
+        "request": "launch",
+        // Use 'module' to run Streamlit as a module.
+        "module": "streamlit",
+        // Arguments passed to the Streamlit module.
+        "args": [
+          "run",
+          // IMPORTANT: Replace 'your_streamlit_app.py' with the actual filename of your main Streamlit script.
+          "your_streamlit_app.py"
+          // Optional: Add any other Streamlit run arguments here, e.g.:
+          // "--server.port",
+          // "8502"
+        ],
+        // Use the integrated terminal.
+        "console": "integratedTerminal",
+        // Debug only user-written code.
+        "justMyCode": true
+        // Ensure it uses the selected Python interpreter (which should be your .venv).
+        // No explicit pythonPath needed if the interpreter is correctly selected in VS Code.
+      }
+    ]
+  }
